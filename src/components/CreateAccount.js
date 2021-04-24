@@ -7,7 +7,7 @@ function CreateAccount() {
 
     const onButtonClick = async()=>{
         // console.log(amount);
-        const result = await axios.post(`http://localhost:8000/api/bank/account/`,{israeliId, name, email})
+        const result = await axios.post(`https://bank-app-server.herokuapp.com/api/bank/account/`,{israeliId, name, email})
         console.log(result);
     }
 

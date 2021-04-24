@@ -8,7 +8,7 @@ function GetAllUsers() {
 
   useEffect(() => {
     const getData = async () => {
-      let { data } = await axios.get('http://localhost:8000/api/bank/account/');
+      let { data } = await axios.get('https://bank-app-server.herokuapp.com/api/bank/account/');
       console.log(data);
       setData(data)
     }

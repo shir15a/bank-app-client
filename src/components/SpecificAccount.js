@@ -6,7 +6,7 @@ function SpecificAccount() {
     const [data, setData] = useState("");
 
     const onButtonClick = async () => {
-        const { data } = await axios.get(`http://localhost:8000/api/bank/account/${id}`)
+        const { data } = await axios.get(`https://bank-app-server.herokuapp.com/api/bank/account/${id}`)
         console.log(data);
         setData(data)
     }

@@ -9,7 +9,7 @@ function Form({type, buttonValue}) {
 
     const onButtonClick = async()=>{
         // console.log(amount);
-        const result = await axios.put(`http://localhost:8000/api/bank/transactions/${type}/${id}`,{amount})
+        const result = await axios.put(`https://bank-app-server.herokuapp.com/api/bank/transactions/${type}/${id}`,{amount})
         console.log(result);
     }
 
